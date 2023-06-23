@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subtemas basicos para C</title>
+</head>
+<body>
+<pre>
+<code>
+            #include <stdio.h> //incluir entrada y salida de datos
+            #include <stdbool.h> // Incluir a los valores booleanos (true & false como numeros)
+            
+            
+            
+            
+            //IMPRIMIR "HOLA MUNDO" EN C
+            /*
+            #include <stdio.h>
+            int main(){
+              printf("Hola mundo ;D\n");
+              return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            //DECLARAR VARIABLES Y ASIGNARLES VALORES
+            /*
+            #include <stdio.h>
+            #include <stdbool.h>
+            int main() {
+                int edad = 25;
+                float altura = 1.75;
+                char inicial = 'J';
+                double salario = 3500.50;
+                int esEstudiante = true;
+            
+                printf("Edad: %d\n", edad);
+                printf("Altura: %.2f\n", altura);
+                printf("Inicial: %c\n", inicial);
+                printf("Salario: %.2lf\n", salario);
+                printf("Es estudiante: %s\n", esEstudiante ? "true" : "false");
+            
+                return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            //CONDICIONALES (if-else)
+            /*
+            int main(){
+              int edad = 18;
+            
+              if (edad >= 18) {
+                  printf("Eres mayor de edad.\n");
+              } else {
+                  printf("Eres menor de edad.\n");
+              }
+              return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            //BUCLES (for-while)
+            /*
+            int main(){
+                // Bucle for
+              for (int i = 1; i <= 5; i++) {
+                  printf("%d\n", i);
+              }
+              
+              // Bucle while
+              int j = 1;
+              while (j <= 5) {
+                  printf("%d\n", j);
+                  j++;
+              }
+              return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            //   #"#"#"# FUNCIONES EN C #"#"#"#
+            /*
+            //|-|-|ASIGNACIONES PARA CREAR UNA FUNCION|-|-|
+            tipo_de_retorno nombre_de_la_funcion(parametros) {
+                // Código de la función
+                // Puede incluir declaraciones de variables, operaciones, condicionales, bucles, etc.
+                // Puede haber un return statement para devolver un valor al llamador de la función
+            }
+            */
+            //_=_=_=_=_=_=_=_=_//
+            /*
+            #include <stdio.h>
+            // Definición de la función
+            void saludar() {
+                printf("ey vv este es un saludo chavales\n");
+            }
+            int main() {
+                // Llamada a la función
+                saludar();
+            
+                return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            // ARRAYS
+            // EL ARREGLO SE DEFINE COMO tipo_de_dato nombre_del_arreglo[tamaño]; ---> tipo de datos - nombre del arreglo - cantidad de datos
+            /*
+            #include <stdio.h>
+            int main() {
+                // Declaración de un arreglo de enteros
+                int numeros[5];
+            
+                // Asignar valores al arreglo
+                numeros[0] = 10;
+                numeros[1] = 20;
+                numeros[2] = 30;
+                numeros[3] = 40;
+                numeros[4] = 50;
+            
+                // Acceder y mostrar los valores del arreglo
+                printf("%d\n", numeros[0]);
+                printf("%d\n", numeros[1]);
+                printf("%d\n", numeros[2]);
+                printf("%d\n", numeros[3]);
+                printf("%d\n", numeros[4]);
+            
+                return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            // BUCLE FOR
+            /* Sintaxis basica:
+            for (inicialización; condición; incremento/decremento) {
+                // Código a ejecutar en cada iteración
+            }
+            //       XD       \\
+            #include <stdio.h>
+            
+            int main() {
+                for (int i = 0; i < 5; i++) {
+                    printf("%d\n", i);
+                }
+            
+                return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            // IF & ELSE
+            /*
+            if (condición) {
+                // Código a ejecutar si la condición es verdadera
+            } else {
+                // Código a ejecutar si la condición es falsa
+            }
+            //          \\
+            #include <stdio.h>
+            
+            int main() {
+                int edad = 18;
+            
+                if (edad >= 18) {
+                    printf("Eres mayor de edad.\n");
+                } else {
+                    printf("Eres menor de edad.\n");
+                }
+            
+                return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            
+            //OPERADORES LOGICOS (&&-and / ||-or / !-not)
+            /*
+            #include <stdio.h>
+            int main() {
+                int edad = 20;
+                int tiene_licencia = true;
+            
+                if (edad >= 18 && tiene_licencia) {  //Utilizamos el operador (&6-and)
+                    printf("Puede conducir.\n");
+                } else {
+                    printf("No puede conducir.\n");
+                }
+            
+                return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            //          FUNCIONES       \\     funcion de suma en C
+            /*
+            #include <stdio.h>
+            // Definición de la función
+            int suma(int a, int b) { //creamos la funcion de suma, en donde vamos a sumar cualquier valor entero...
+                int resultado = a + b;
+                return resultado;
+            }
+            int main() { //Funcion principal
+                // Llamada a la función
+                int resultado_suma = suma(6, 3); //Vamos a sumar los valores 6 y 3...
+            
+                printf("El resultado de la suma es: %d\n", resultado_suma); //Imprime el numero 9 ya que la suma de  6 + 3 es igual a 9
+                return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            //PUNTEROS en C
+            /*
+            sintaxis:
+            int *puntero;
+            
+            hemos declarado un puntero llamado puntero que puede almacenar la dirección de memoria de una variable de tipo int.
+            
+            int main(){
+              int numero = 18;
+              int *puntero = &numero;
+              printf("El valor de la variable es: %d\n", *puntero);
+            }
+            */
+            
+            
+            
+            
+            //BUCLES - While
+            /*
+            sintaxis:
+            while (condición) {
+                // Código a ejecutar en cada iteración
+                // Asegúrate de actualizar la condición dentro del bucle para evitar un bucle infinito
+            }
+            
+            #include <stdio.h>
+            int main() {
+                int j = 1;
+                while (j <= 5) {
+                    printf("%d\n", j);
+                    j++;
+                }
+            
+                return 0;
+            }
+            */
+            
+            
+            
+            
+            
+            //SUMAR DE DOS NUMEROS EN C
+            /*
+            #include <stdio.h>
+            int main(){ 
+              printf("SUMAR 2 NUMERO ENTEROS\n");
+              printf("\n");
+              int numero1;
+              int numero2;
+              printf("ingrese su 1er numero entero: "); scanf("%d", &numero1);
+              printf("Ingrese su 2do numero entero: "); scanf("%d", &numero2);
+              printf("La suma de sus dos numeros enteros es: %d\n", numero1 + numero2);
+              return 0;
+            }
+            */
+            
+</code>
+</pre>
+</body>
+</html>
